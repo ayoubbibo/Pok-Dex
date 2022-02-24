@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex | Pokemon</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Neonderthaw&family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba49a15952.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <nav class="nav-bar">
+            <img class="logo" src="assets/images/pokedex.svg" alt="pokemon logo">
+        </nav>
+        <pokemonsdisplay></pokemonsdisplay>
+    </div>
+    
+
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+    <!-- Import Components -->
+    <script src="./components/pokemonsdisplay.js"></script>
+    <script src="./components/pokemonresearch.js"></script>
+    <script src="./components/searchList.js"></script>
+    
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+
+  </body>
+</body>
+</html>
